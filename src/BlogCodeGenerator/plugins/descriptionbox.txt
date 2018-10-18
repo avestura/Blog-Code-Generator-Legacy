@@ -1,0 +1,17 @@
+﻿<script type="text/javascript" src="http://bayanbox.ir/view/394873342650816261/jquery-1.9.1.min.js"></script>
+<script>
+$(document).ready(function(){$(".BoxUdSB .BoxUdSBOP").click(function(){
+$(this).next('.BoxUdSBs').fadeOut(300);/*SibGraph.IR - Dariush Farhang*/
+$(".BoxUdSBs").css({"display" : "none"});/*SibGraph.IR - Dariush Farhang*/
+$(this).next('.BoxUdSBs').slideToggle(300);/*SibGraph.IR - Dariush Farhang*/
+});/*SibGraph.IR - Dariush Farhang*/});/*SibGraph.IR - Dariush Farhang*/open.open;/*SibGraph.IR - Dariush Farhang*/
+</script>
+<link rel="stylesheet" href="http://bayanbox.ir/download/5271195465738156715/style-descriptionbox.css">
+
+<div class="BoxUdSB"><div class="BoxUdSBOP">(*var1*)</div><div class="BoxUdSBs">
+(*var2*)
+</div></div>
+
+<div class="BoxUdSB"><div class="BoxUdSBOP">(*var3*)</div><div class="BoxUdSBs">
+(*var4*)
+</div></div>

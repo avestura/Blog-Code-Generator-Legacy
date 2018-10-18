@@ -1,0 +1,3 @@
+<div style="position:fixed;(*l_or_r*):0px;(*t_or_b*):0px;z-index:200;">
+<img alt="(*img_alt*)" title="(*img_desc*)" src="(*img_source*)" height="(*img_h*)" width="(*img_w*)"/>
+</div>

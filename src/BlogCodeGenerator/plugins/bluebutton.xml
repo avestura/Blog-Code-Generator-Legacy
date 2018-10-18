@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>دکمه آبی</name>
+        <short_text>ساخت یک دکمه آبی جدید</short_text>
+        <info></info>
+        <author>آرین نرم افزار</author>
+        <load>bluebutton.txt</load>
+        <version>یکم</version>
+        <js>false</js>
+	<fav>bluebutton.png</fav>
+		<app_version>9</app_version>
+    </data>
+    
+    <options>
+
+<lbl>
+        <text>متن دکمه</text>
+        <input>هم اکنون دانلود کنید!</input>
+        <sug>دانلود|هم اکنون دانلود کنید!|ورود|ثبت نام|اطلاعات|نمایش|گزینه ها</sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>آدرس دکمه</text>
+        <input>http://</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+
+
+		<gen_text>ساخت دکمه</gen_text>
+    </options>
+
+</base>
+	

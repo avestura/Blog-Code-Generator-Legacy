@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+	<data>
+		<name>جعبه کشویی توضیحات</name>
+		<short_text>ساخت جعبه کشویی برای توضیحات</short_text>
+		<info></info>
+		<author>سیب گراف</author>
+		<fav>descriptionbox.png</fav>
+		<load>descriptionbox.txt</load>
+		<version>یکم</version>
+		<js>true</js>
+		<app_version>11</app_version>
+		<download>http://aryan-pc.blog.ir/post/blogcode-app</download>
+		<page>sibgraph.ir</page>
+		<copyto>پست ها یا بخش body</copyto>
+	</data>
+
+	<options>
+
+		<lbl>
+	<text>عنوان یک</text>
+	<input>عنوان یک</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>توضیح</text>
+	<input>توضیحات بخش اول</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>عنوان دو</text>
+	<input>عنوان دو</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>توضیح</text>
+	<input>توضیحات بخش دوم</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+
+
+		<gen_text>ساخت جعبه</gen_text>
+	</options>
+
+</base>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+    <data>
+        <name>ثانیه شمار حضور</name>
+        <short_text>شمارش ثانیه حضور در سایت</short_text>
+        <info>این ابزار مدت زمان حضور کاربر را شمارش میکند و به وی اطلاع میدهد</info>
+        <author>آرین نرم افزار</author>
+        <load>sec_counter.txt</load>
+        <version>اول</version>
+        <js>true</js>
+		<app_version>9</app_version>
+<fav>sec_counter.png</fav>
+    </data>
+    
+    <options>
+
+        <lbl>
+                <text>زمان شروع نمایش</text>
+                <input>3</input>
+                <sug>0|1|2|3|4|5|6|7</sug>
+                <rtl>false</rtl>
+        </lbl>
+
+        <lbl>
+                <text>متن پیشفرض اولیه</text>
+                <input>شما به تازگی وارد این صفحه شده اید</input>
+                <sug>همین حالا|حالا|شما به تازگی وارد این صفحه شده اید</sug>
+                <rtl>true</rtl>
+        </lbl>
+
+	
+					
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

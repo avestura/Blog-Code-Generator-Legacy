@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="http://bayanbox.ir/id/3644974440807781512?download">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://bayanbox.ir/id/3621599874870209925?view"></script>
+<style> .rightNavArr{display:block !important}</style>
+<div class="rightNavArr"></div>
+<div class="rightNav"> 
+<a href="(*link_1*)">(*text_1*)</a> 
+<a href="(*link_2*)">(*text_2*)</a> 
+<span> <a href="(*link_3*)">(*text_3*)</a></span> 
+<a href="mailto:(*email*)">(*text_4*)</a> 
+<a href="ymsgr:sendim?(*yahoo_id*)">(*text_5*)</a> 
+</div>

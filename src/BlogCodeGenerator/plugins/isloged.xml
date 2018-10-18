@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+    <data>
+        <name>تشخیص عضویت</name>
+        <short_text>ابزار تشخیص عضویت در بیان</short_text>
+        <info>کاربران میهمانی که عضو بیان نباشند نمی توانند به مطالب رای دهند و این ابزار میتواند این موضوع را به بازدید کننده گوشزد کند</info>
+        <author>آرین نرم افزار</author>
+        <load>isloged.txt</load>
+        <version>اول</version>
+        <js>true</js>
+		<app_version>9</app_version>
+	<fav>isloged.png</fav>
+    </data>
+    
+    <options>
+
+        <lbl>
+                <text>متن عضو</text>
+                <input>شما در سایت عضو هستید و میتوانید رای دهید</input>
+                <sug></sug>
+                <rtl>true</rtl>
+        </lbl>
+
+        <lbl>
+                <text>متن میهمان</text>
+                <input>کاربر میهمان ؛ به سایت خوش آمدید</input>
+                <sug></sug>
+                <rtl>true</rtl>
+        </lbl>
+
+		
+			
+		
+		
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

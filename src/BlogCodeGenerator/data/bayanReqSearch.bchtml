@@ -1,0 +1,3 @@
+﻿<div class="searchbar"><form action="https://google.com/search" id="srh-frm">
+<input type="text" autocomplete="off" class="SearchTBox" id="SearchInput" name="q" onblur="if(this.value=='') this.value='(*text_alt*)', this.style.color = '#a3a3a3';" onfocus="if(this.value=='(*text_alt*)')this.value='',this.style.color = '#333';" style="text-align: right; direction: rtl; color: rgb(163, 163, 163); height: 17px;" value="(*text_alt*)"><input type="submit" class="SearchButton" onclick="q.value = 'site:(*site_url*) '+q.value;" value="(*btn_text*)" style="margin-right: 4px; background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(229, 229, 229) 61%) repeat scroll 0px 0px transparent;">
+</form></div>

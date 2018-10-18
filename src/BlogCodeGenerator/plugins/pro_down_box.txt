@@ -1,0 +1,13 @@
+﻿<div class="idownbox">
+	<div id="idownboxheader"><div><img src="(*var2*)"><span>(*var1*)</span></div></div>
+	<div id="idownboxsapce">
+		<div id="idownboxinfo">(*var3*)</div>
+		<img src="(*var4*)">
+	</div>
+		<div id="idownboxbuttons">
+		<a href="(*var6*)" id="idownclickp">(*var5*)</a>
+		<a href="(*var8*)" id="idownclickp">(*var7*)</a>
+		<a href="(*var10*)" id="idownclickp">(*var9*)</a>
+	</div>
+</div>
+<style>.idownbox {  background: url("http://bayanbox.ir/view/7883418715414977160/kashi.png") repeat scroll 0 0 rgba(149, 172, 255, 0.34);  border: 1px solid gray;  height: 155px;  width: 400px;  text-align:right;}#idownboxheader {  background: url("http://bayanbox.ir/view/6357856806788907173/maintitle.png") repeat scroll 0 0 rgba(59, 57, 255, 0.21);  height: 30px;  width: 100%;  text-align:right;}#idownboxheader > div > span {  color: white;  float: right;  margin-right: 8px;  padding-top: 5px;}#idownboxheader img {  float: right;  margin-right: 5px;  padding-top: 4px;}#idownboxinfo {  background: none repeat scroll 0 0 rgba(171, 193, 255, 0.2);  border-right: 3px solid #4a9cff;  color: #1981ff;  float: right;  height: 73px;  margin-right: 8px;  margin-top: 6px;  padding-right: 6px;  width: 295px;  overflow:hidden;}#idownboxbuttons {  margin-right: 7px;  margin-top: 11px;}#idownclickp {  background: none repeat scroll 0 0 #3498db;  border-color: -moz-use-text-color -moz-use-text-color #0077aa;  border-image: none;  border-style: none none solid;  border-width: 0 0 2px;  box-shadow: 0 -3px #0077aa inset;  color: white;  cursor: pointer;  direction: rtl;  font-family: "B Yekan","X Yekan","Yekan","DinarOne",Tahoma,sans-serif;  font-size: 13px;  font-style: normal;  padding: 5px;  text-align: center;  text-decoration: none;}#idownboxsapce > img {  margin-bottom: 7px;  margin-right: 9px;  margin-top: 8px;width:64px;height:64px;}</style>

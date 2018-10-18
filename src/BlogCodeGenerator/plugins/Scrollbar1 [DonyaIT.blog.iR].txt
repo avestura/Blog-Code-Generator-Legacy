@@ -1,0 +1,3 @@
+﻿<!-- this script got from www.DonyaIT.blog.iR - created by= Mohammad Eskandari Khosrowshahi-->
+<script type="text/javascript" src="http://bayanbox.ir/download/4283943199475970622/scroll.js"></script><script>$(document).ready(function(){$("html").niceScroll({railalign:"(*var1*)",cursorcolor:"#(*var2*)",cursorwidth:"(*var3*)px",background:"#(*var4*)",autohidemode:(*var5*),hidecursordelay:"800",cursoropacitymax:"0.7",cursorborder:"0",railpadding:{left:0,right:2}});});</script><div style="display:none"></div>
+<!-- this script got from www.DonyaIT.blog.iR - created by= Mohammad Eskandari Khosrowshahi-->

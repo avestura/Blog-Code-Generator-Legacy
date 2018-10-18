@@ -1,0 +1,9 @@
+﻿<style>
+.effective {
+  transition-duration: (*var2*)s;
+}
+.effective:hover {
+  transform: rotate((*var3*)deg);
+}
+</style>
+<img class="effective" src="(*var1*)">

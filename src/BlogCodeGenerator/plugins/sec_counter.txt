@@ -1,0 +1,12 @@
+﻿<!-- Aryan Software - Blog Code Generator -->
+<script type="application/javascript">
+	var anint = 0;
+	var thisismyVar = setInterval(function () {aragon(anint)}, 1000);
+			function aragon() {
+	anint = anint + 1;
+		if (anint > (*var1*)) {
+			document.getElementById("aryan_time").innerHTML = "شما " + anint + " ثانیه است که در این صفحه حضور دارید";
+		 }
+	}
+</script>
+<div id="aryan_time">(*var2*)</div>

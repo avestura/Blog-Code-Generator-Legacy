@@ -1,0 +1,41 @@
+﻿<style>
+  @keyframes motinx{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(180deg);}
+  }
+  @-moz-keyframes motinx{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(180deg);}
+  }
+  @-o-keyframes motinx{
+    from{-o-transform:rotate(0deg);}
+    to{-o-transform:rotate(180deg);}
+  }
+  @-webkit-keyframes motinx{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(180deg);}
+  }
+  @-ms-keyframes motinx{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(180deg);}
+  }
+  .motinxLoading{
+    border-radius:100px;
+    -moz-border-radius:100px;
+    -o-border-radius:100px;
+    -ms-border-radius:100px;
+    -webkit-border-radius:100px;
+    width:50px;
+    height:50px;
+    border:3px transparent solid;
+    border-right-color:(*var1*);
+    border-left-color:(*var1*);
+    margin:0 auto;
+    animation:motinx .5s infinite linear;
+    -moz-animation:motinx  .5s infinite linear;
+    -o-animation:motinx  .5s infinite linear;
+    -webkit-animation:motinx  .5s infinite linear;
+    -ms-animation:motinx  .5s infinite linear;
+  }
+</style>
+<div class="motinxLoading"></div>

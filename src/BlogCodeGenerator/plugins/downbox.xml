@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+    <data>
+        <name>جعبه دانلود</name>
+        <short_text>ساخت جعبه دانلود با امکانات زیبا</short_text>
+        <info>شما می توانید با استفاده از این ابزار جعبه دانلودی با 4 نوع امکانات و لینک در وب سایت خود تولید و استفاده کنید.        در هر ردیف متنی و لینک می توانید هر نوع متن و لینکی که بخواهید درج و تنظیم نمایید.        در صورتی که برای هر متغییری لینک ندارید و می خواهید فقط از متن آن استفاده کنید کافی است که محل مربوط به لینک آن را خالی بگذارید.</info>
+        <author>نسن نور</author>
+        <load>downbox.txt</load>
+        <version>اول</version>
+        <js>false</js>
+		<app_version>8</app_version>
+	<fav>downbox.png</fav>
+    </data>
+    
+    <options>
+
+        <lbl>
+            <text>متن مربوط به لینک اول</text>
+            <input>لینک دانلود</input>
+            <rtl>true</rtl>
+        </lbl>
+
+        <lbl>
+            <text>لینک ذوم</text>
+            <input>http://antimasan.persiangig.com/photo/nesen/nesse6.JPG</input>
+            <rtl>false</rtl>
+        </lbl>
+
+        <lbl>
+            <text>متن مربوط به لینک دوم</text>
+            <input>فرمت فایل : jpg</input>
+            <rtl>true</rtl>
+        </lbl>
+
+        <lbl>
+            <text>لینک دوم</text>
+            <input></input>
+            <rtl>false</rtl>
+        </lbl>
+
+        <lbl>
+            <text>متن مربوط به لینک سوم</text>
+            <input>رمز عبور: ندارد.</input>
+            <rtl>true</rtl>
+        </lbl>
+
+        <lbl>
+            <text>لینک سوم</text>
+            <input>http://www.nesennoor.ir/Forum/Catgory/11/Post/29</input>
+            <rtl>false</rtl>
+        </lbl>
+
+        <lbl>
+            <text>متن مربوط به لینک چهارم</text>
+            <input>کپی برداری ممنوع می باشد</input>
+            <rtl>true</rtl>
+        </lbl>
+
+        <lbl>
+            <text>لینک چهارم</text>
+            <input>http://www.nesennoor.ir/Forum/Catgory/11/Post/29</input>
+            <rtl>false</rtl>
+        </lbl>
+
+
+		<gen_text>ساخت جعبه</gen_text>
+    </options>
+
+</base>
+	

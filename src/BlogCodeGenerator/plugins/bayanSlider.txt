@@ -1,0 +1,245 @@
+﻿<div id="SliderWrap">
+	<a id="Next">بعدی</a>
+	<div class="SlidesWrap">
+		<box:post_list flag="Slider" Max="10">
+			<ul id="SlidesCont">
+				<view:post_list>
+					<li>
+						<div class="SlideImg"><img alt="" src="(*post_image*)"></div>
+						<div class="slideContent"><h2><a href="(*post_link*)">						(*post_title*)</a></h2>
+						<p>(*post_summary*)</p></div>
+					</li>
+				</view:post_list>
+			</ul>
+		</box:post_list >
+	</div>
+	<a id="Prev">قبلی</a>
+</div>
+<style>
+/* Slider ----*/
+#SliderWrap {
+	background-color: #404040;
+	
+	margin: 0 auto 5px;
+	overflow: hidden;
+	
+	position: relative;
+	width: 980px;
+	
+}
+.SlidesWrap {
+	width: 900px;
+	margin-left: 40px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+ul#SlidesCont {
+	width: 10000px;
+	position: relative;
+	float: left;
+	padding: 0;
+}
+
+ul#SlidesCont li {
+	width: 220px;
+	float: left;
+	position: relative;
+	list-style: none;
+	direction: rtl;
+	margin-left: 5px ;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+}
+ul#SlidesCont li:hover {
+	background-color: #ddd;
+	box-shadow: 0 0 5px #222;
+	-moz-box-shadow: 0 0 5px #222;
+	-webkit-box-shadow: 0 0 5px #222;
+}
+ul#SlidesCont li:hover .slideContent {
+	color: #333;
+}
+ul#SlidesCont li:hover h2 a {
+	color: #2474e0;
+}
+ul#SlidesCont li .SlideImg {
+        background-color: #c7c7c7;
+        border: 4px solid #fff;
+        height: 100px;
+        margin: 10px 12px 5px;
+        overflow: hidden;
+        width: 188px;
+}
+ul#SlidesCont li:hover .SlideImg {
+	border-color: #888;
+}
+ul#SlidesCont li h2 a {
+        color: #ddd;
+        font-size: 16px;
+        margin: 0 3px;
+	display:inline-block;
+	text-decoration: none;
+	font-family: "BTraffic","Times New Roman",Arial,Helvetica;
+}
+ul#SlidesCont li .slideContent {
+        color: #ccc;
+        margin: 5px 10px 10px;
+        text-align: right;
+        clear: both;
+        font: 12px/20px tahoma;
+}
+#Prev, #Next  {
+        bottom: 0;
+        cursor: pointer;
+        height: 100%;
+        position: absolute;
+        width: 25px;
+        text-indent: -9999px;
+        z-index: 10;
+        text-align:center;
+        font: 11px/25px tahoma;
+}
+#Next {
+        right: 0;   
+	background: url('(*var1*)') no-repeat center right #999;
+}
+#Next:hover {
+	background-color: red; 
+        color:#fff; 
+	background-position: center left;
+}
+#Prev {
+        left: 0px;
+	background: url('(*var2*)') no-repeat center left #999;
+}
+#Prev:hover{
+        background-color: red; 
+        color:#fff; 
+	background-position: center right;    
+}
+</style>
+<script src="http://blog.ir/media/script/jquery-1.8.2.min.js?1" type="text/javascript"></script>
+<script>
+	//<![CDATA[
+	$(function(){
+		$('a.tab').click(function(){
+			$('ul.tabs li').removeClass('active');
+			$(this).parents('li:first').addClass('active');
+			$('#tabs_contain div.tab_cnt').removeClass('tab_cnt_active');
+			$($(this).attr('rel')).addClass('tab_cnt_active');
+		});
+		$('#ModalBG').click(function() {
+		$('#Modal').fadeOut();
+		});
+		function PAPslider() {
+			var $Container = $('ul#SlidesCont'),
+			$Items = $('ul#SlidesCont').find('li'),
+			$Next = $('#Next'),
+			$Prev = $('#Prev'),
+			Size = $Items.size(),
+			PerPage = 4,
+			NPages = Math.ceil(Size/(PerPage + 0.001)),
+			Cur = 0,
+			SlideWidth = 225,
+			Speed = 1000,
+			Duration = 5000;
+			Pointer = 0,
+			StandBy = false;
+			function moveToSlide(t)
+			{
+				$Container.animate({
+				left: -t*SlideWidth});
+				Cur = t;
+			}
+			function Next() {
+				if (Cur >= Size - PerPage)
+					return;
+				moveToSlide(Cur+1);
+			}
+			function Prev() {
+				if (Cur <= 0)
+					return;
+				moveToSlide(Cur-1);
+			}
+			function First() {
+				if (Cur <= 0)
+					return;
+				moveToSlide(0);
+			}
+			function Slide(){
+				StandBy = false;
+				window.clearInterval(timer);
+				timer = setInterval(Slide, Duration);
+				if (Cur >= Size - PerPage)
+				First();
+				else
+				Next();
+			}
+			var timer;
+			$Next.click(function () {
+				StandBy = true;
+				Next()
+				AutoSlider(true);
+			});
+			$Prev.click(function () {
+				StandBy = true;
+				Prev()
+				AutoSlider(true);
+			});
+			function AutoSlider(t, m)
+			{
+				if (typeof(m) === "undefined" || StandBy) 
+					m = 1;
+				if (t)
+				{
+					window.clearInterval(timer);
+					timer = setInterval(Slide, Duration * m);
+				}
+				else
+				{
+					window.clearInterval(timer);
+				}
+			}
+			window.AutoSlider = AutoSlider;
+			$('#SliderWrap').hover(function() {
+				AutoSlider(false);
+				}, function() {
+				AutoSlider(true, 0.1);
+			});
+			AutoSlider(true);
+		}//end PAP Slider
+		
+		PAPslider();
+		$('a.rate-button').hover(function() {
+			var leftPos = $(this).position().left+24,
+			topPos = $(this).position().top-4,
+			$tip = $(this).find('div.tip');
+			$tip.css({'top':topPos ,'left': leftPos}).stop(true, true).fadeIn();
+			}, function() {
+			$(this).find('div.tip').stop(true, true).fadeOut();
+		});
+		
+		$('.comments').hover(function() {
+			var leftPos = $(this).position().left+24,
+			topPos = $(this).position().top,
+			$tip = $(this).find('div.tip');
+			$tip.css({'top':topPos ,'left': leftPos}).stop(true, true).fadeIn();
+			}, function() {
+			$(this).find('div.tip').stop(true, true).fadeOut();
+		});
+		
+		$('.SideTitleWrp').click(function() {
+			var $target = $(this).parent().find('.cnt');
+			if ($target.hasClass('hidden')) {
+			$target.removeClass('hidden');
+			$(this).removeClass('plus');
+			}	else if (!$target.hasClass('hidden') ) {
+			$target.addClass('hidden');
+			$(this).addClass('plus');
+			}
+		});
+	});
+	//]]>
+</script>

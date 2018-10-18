@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>متن با رنگ متغیر</name>
+        <short_text>متن با رنگ متغیر قابل تنظیم</short_text>
+        <info>تغییر رنگ متن با سرعت دلخواه و طیف های مختلف با قابلیت تنظیم سرعت تغییر رنگ                سازنده: محمد اسکندری خسروشاهی        نسخه: 1        وبلاگ: DonyaIT.blog.iR  |  دنیا آی‌تی.بلاگـــ</info>
+        <author>Mohammad Eskandari Khosrowshahi</author>
+        <load>rainbow1  [DonyaIT.blog.ir] .txt</load>
+        <version>1</version>
+        <js>true</js>
+		<app_version>9</app_version>
+<fav>rainbow1  [DonyaIT.blog.ir] .png</fav>
+    </data>
+    
+    <options>
+
+<lbl>
+        <text>متن مورد نظر</text>
+        <input>DonyaIT.blog.iR</input>
+        <sug>DonyaIT.blog.iR</sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>سرعت تغییر رنگ (یک عدد بنویسید)(عدد بیشتر=سرعت کمتر)</text>
+        <input>180</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+
+
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

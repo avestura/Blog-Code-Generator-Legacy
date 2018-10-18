@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE42B076-4CDF-4BAD-84A2-C1C2E0419572}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PluginWorkShop.My.MyApplication</StartupObject>
+    <RootNamespace>PluginWorkShop</RootNamespace>
+    <AssemblyName>PluginWorkShop</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>xcode.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>H:\DotNetZipLib-DevKit-v1.9\zip-v1.9\Release\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VarForm.Designer.vb">
+      <DependentUpon>VarForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VarForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VarComboForm.Designer.vb">
+      <DependentUpon>VarComboForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VarComboForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="EditToolsForm.Designer.vb">
+      <DependentUpon>EditToolsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditToolsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VarForm.resx">
+      <DependentUpon>VarForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VarComboForm.resx">
+      <DependentUpon>VarComboForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditToolsForm.resx">
+      <DependentUpon>EditToolsForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+    <None Include="Resources\GreenBubbles.jpg" />
+    <None Include="Resources\bluebot1.png" />
+    <None Include="Resources\software_icon_bg.png" />
+    <None Include="Resources\greenmsg.png" />
+    <None Include="Resources\tcat.gif" />
+    <None Include="Resources\bcg_bblog.png" />
+    <None Include="Resources\b_code.png" />
+    <None Include="Resources\Lab.png" />
+    <None Include="Resources\27_edit_text16.png" />
+    <None Include="Resources\Icon_Little_Chart.png" />
+    <None Include="Resources\gnome_document_page_setup %281%29.png" />
+    <None Include="Resources\contacte.png" />
+    <None Include="Resources\plugin72.png" />
+    <None Include="Resources\workshop.png" />
+    <None Include="Resources\plugin.png" />
+    <None Include="Resources\rightel-footer-global.jpg" />
+    <None Include="Resources\bluebot.png" />
+    <None Include="Resources\Ajor.png" />
+    <Content Include="Resources\fxtd_dll.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\symbol_check.png" />
+    <None Include="Resources\symbol_restricted.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\cream_pixels.png" />
+    <None Include="Resources\transparent-bg-noise.png" />
+    <None Include="Resources\body-bg5.png" />
+    <None Include="Resources\kashi.png" />
+    <None Include="Resources\menu_bg_blue.gif" />
+    <None Include="Resources\menu_bg_gray.gif" />
+    <None Include="Resources\symbol_add.png" />
+    <None Include="Resources\symbol_refresh.png" />
+    <None Include="Resources\globe_connected.png" />
+    <Content Include="Resources\fxtd_dll1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\STRUCTURE.xml" />
+    <None Include="Resources\rightel-footer-global1.jpg" />
+    <None Include="Resources\Cute_rocket_launching_16.png" />
+    <None Include="Resources\Save_icon_16.png" />
+    <None Include="Resources\Puzzle_piece_plugin_16.png" />
+    <None Include="Resources\Living_room_books_group_16.png" />
+    <None Include="Resources\Handyman_Tools_16.png" />
+    <None Include="Resources\info_16.png" />
+    <None Include="Resources\Settings_cogwheel_button_16.png" />
+    <None Include="Resources\Code_16.png" />
+    <None Include="Resources\Paragraph_sign_16.png" />
+    <None Include="Resources\Earth_16.png" />
+    <None Include="Resources\Chain_links_16.png" />
+    <None Include="Resources\Copy_Documents_16.png" />
+    <None Include="Resources\Plus_sign_16.png" />
+    <None Include="Resources\Add_button_inside_black_circle_16.png" />
+    <None Include="Resources\Negative_sign_Button_16.png" />
+    <None Include="Resources\Refresh_arrow_16.png" />
+    <None Include="Resources\Affirmative_check_mark_16.png" />
+    <None Include="Resources\Cancel_button_16.png" />
+    <None Include="Resources\Variable_symbol_in_window_16.png" />
+    <None Include="Resources\Text_Tool_16.png" />
+    <None Include="Resources\Office_List_16.png" />
+    <None Include="Resources\Down_Arrow_16.png" />
+    <None Include="Resources\Up_Arrow_16.png" />
+    <Content Include="xcode.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

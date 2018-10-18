@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>جعبه دانلود پیشرفته</name>
+        <short_text>ساخت جعبه دانلود پیشرفته</short_text>
+        <info>ساخت جعبه دانلود پیشرفته با قابلیت های متنوع</info>
+        <author>آرین نرم افزار</author>
+        <load>pro_down_box.txt</load>
+        <version>اول</version>
+        <js>false</js>
+<fav>pro_down_box.png</fav>
+		<app_version>9</app_version>
+    </data>
+    
+    <options>
+
+<lbl>
+        <text>عنوان</text>
+        <input>دانلود فایل</input>
+        <sug></sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>تصویرک هدر</text>
+        <input>http://bayanbox.ir/view/4350709257155751695/download.png</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>توضیحات فایل</text>
+        <input>برای دانلود فایل روی دکمه «دانلود این فایل» کلیک کنید. حجم این فایل حدودا دو مگابایت است</input>
+        <sug></sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>تصویر دانلود</text>
+        <input>http://bayanbox.ir/view/9042387482875936708/Download.png</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>متن دانلود</text>
+        <input>دانلود فایل مورد نظر</input>
+        <sug></sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>لینک دانلود</text>
+        <input>http://</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>متن دمو</text>
+        <input>نمایش دمو</input>
+        <sug></sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>لینک دمو</text>
+        <input>http://</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>متن منبع</text>
+        <input>منبع این فایل</input>
+        <sug></sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>لینک منبع</text>
+        <input>http://</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+
+
+		<gen_text>ساخت جعبه دانلود</gen_text>
+    </options>
+
+</base>
+	

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>ساخت Loading</name>
+        <short_text>ساخت لودینگ با سی اس اس</short_text>
+        <info></info>
+        <author>motinex</author>
+        <load>loadingCSS.txt</load>
+        <version>اول</version>
+        <js>false</js>
+<fav>loadingCSS.png</fav>
+		<app_version>9</app_version>
+    </data>
+    
+    <options>
+
+<lbl>
+        <text>رنگ لودینگ (HTML)</text>
+        <input>blue</input>
+        <sug>red|blue|green|purple|yellow|purple|black|white|gray|gold|silver|orange</sug>
+        <rtl>false</rtl>
+</lbl>
+
+
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

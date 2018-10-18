@@ -1,0 +1,897 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAF50443-B9EE-4F43-AD00-0D7BA6782819}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BlogCodeGenerator.My.MyApplication</StartupObject>
+    <RootNamespace>BlogCodeGenerator</RootNamespace>
+    <AssemblyName>Blog Code Generator</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>blogGen.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>31FC138006729C091A57222049E38BDF4C266567</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HTML Generation_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="FontChanger.vb" />
+    <Compile Include="BaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.vb">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PluginErrorForm.Designer.vb">
+      <DependentUpon>PluginErrorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PluginErrorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateImageForm.Designer.vb">
+      <DependentUpon>GenerateImageForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateImageForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeInsertForm.Designer.vb">
+      <DependentUpon>CodeInsertForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeInsertForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopyrightForm.Designer.vb">
+      <DependentUpon>CopyrightForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CopyrightForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginInfoForm.Designer.vb">
+      <DependentUpon>PluginInfoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PluginInfoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginLoaderForm.Designer.vb">
+      <DependentUpon>PluginLoaderForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PluginLoaderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.vb">
+      <DependentUpon>UpdateForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebWarnForm.Designer.vb">
+      <DependentUpon>WebWarnForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebWarnForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generator.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GenerateLinkFont.Designer.vb">
+      <DependentUpon>GenerateLinkFont.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateLinkFont.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateParagraphForm.Designer.vb">
+      <DependentUpon>GenerateParagraphForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateParagraphForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkToolsForm.Designer.vb">
+      <DependentUpon>LinkToolsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LinkToolsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageToolsForm.Designer.vb">
+      <DependentUpon>ImageToolsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImageToolsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkListForm.Designer.vb">
+      <DependentUpon>LinkListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LinkListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarqueeToolsForm.Designer.vb">
+      <DependentUpon>MarqueeToolsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MarqueeToolsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceToolsForm.Designer.vb">
+      <DependentUpon>SourceToolsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SourceToolsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginErrorForm.resx">
+      <DependentUpon>PluginErrorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateImageForm.resx">
+      <DependentUpon>GenerateImageForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeInsertForm.resx">
+      <DependentUpon>CodeInsertForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopyrightForm.resx">
+      <DependentUpon>CopyrightForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginInfoForm.resx">
+      <DependentUpon>PluginInfoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginLoaderForm.resx">
+      <DependentUpon>PluginLoaderForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebWarnForm.resx">
+      <DependentUpon>WebWarnForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateLinkFont.resx">
+      <DependentUpon>GenerateLinkFont.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateParagraphForm.resx">
+      <DependentUpon>GenerateParagraphForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkToolsForm.resx">
+      <DependentUpon>LinkToolsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageToolsForm.resx">
+      <DependentUpon>ImageToolsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkListForm.resx">
+      <DependentUpon>LinkListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarqueeToolsForm.resx">
+      <DependentUpon>MarqueeToolsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceToolsForm.resx">
+      <DependentUpon>SourceToolsForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="data\fonts\AdobeArabic.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\fonts\Droid.Arabic.Naskh.Bold.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\fonts\Droid.Arabic.Naskh.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="HTML Generation_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\bkg-blu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cream_pixels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DroidNaskh-Regular.ttf" />
+    <None Include="Resources\types-bg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firefox_grain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bayan.ico" />
+    <Content Include="blogGen.ico" />
+    <None Include="data\bayanFixedReq.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanJSPrint.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanMenuFly.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanMenuReq.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanMenu_wrn.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanNewButton.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanNewButtonCSS.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanNewJSMenu.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="data\bayanReqC.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="data\bayanReqSearch.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanReqUp.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanRightMenu.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanScoringReq.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanSectionReq.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanToup_wrn.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\bayanWelReq.bchtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="data\config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\cur\a.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\cur\b.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\cur\c.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\cur\d.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\cur\e.cur">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\fav.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\messages.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\preview.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\pt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\Style.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\tools\img_generator.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\tools\link_generator.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\tools\marquee.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\aks_bozrorgnamaee.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\aks_bozrorgnamaee.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\bayanSlider.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\bayanSlider.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\bfly.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\bfly_menu.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\bfly_menu.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\bluebutton.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\bluebutton.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\bluebutton.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\contact.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\dancing text1 [DonyaIT.blog.iR].txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\dancing text1 [DonyaIT.blog.iR].xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\descriptionbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\descriptionbox.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\descriptionbox.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\DonyaIT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\downbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\downbox.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\downbox.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Download_Arrow_ plugin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\efectmatn.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\efectmatn.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\gmap.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\gmap.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\gmap.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\imagebox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\imagebox.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\imagebox.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\isloged.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\isloged.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\isloged.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\loadingCSS.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\loadingCSS.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\loadingCSS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\menu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Nesen-Noor.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Nesen-Noor.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\prodownboxslider.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\prodownboxslider.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\pro_down_box.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\pro_down_box.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\pro_down_box.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\rainbow1  [DonyaIT.blog.ir] .png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\rainbow1  [DonyaIT.blog.ir] .txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\rainbow1  [DonyaIT.blog.ir] .xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\roban.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\roban_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\roban_web_design.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\roban_web_design.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\rollingmenu.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\rollingmenu.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\rotate.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\rotatepic.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\rotatepic.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Scrollbar1 [DonyaIT.blog.iR].png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Scrollbar1 [DonyaIT.blog.iR].txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Scrollbar1 [DonyaIT.blog.iR].xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\sec_counter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\sec_counter.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\sec_counter.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Shaking text1 [DonyaIT.blog.iR] .png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Shaking text1 [DonyaIT.blog.iR] .txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Shaking text1 [DonyaIT.blog.iR] .xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\Shaking text1[DonyaIT.blog.iR] .png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\slider.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\text-colors.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\text-colors.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\text-colors.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\02.png" />
+    <Content Include="Resources\07.png" />
+    <Content Include="Resources\17.png" />
+    <Content Include="Resources\31.png" />
+    <None Include="Resources\Selection_Square_16.png" />
+    <None Include="Resources\Clipboard_paste_option_16.png" />
+    <None Include="Resources\Open_scissors_16.png" />
+    <None Include="Resources\Copy_Documents_16.png" />
+    <None Include="Resources\RSS_Sign_16.png" />
+    <None Include="Resources\Paragraph_sign_16.png" />
+    <None Include="Resources\Fire_flames_24.png" />
+    <None Include="Resources\Fire_flames_32.png" />
+    <None Include="Resources\Burning_Flames_24.png" />
+    <None Include="Resources\logo-ykan.png" />
+    <None Include="Resources\js_WARNING_codev2.png" />
+    <None Include="Resources\js_WARNING_codev1.png" />
+    <None Include="Resources\js_WARNING_code.png" />
+    <None Include="Resources\Cardboard_box_with_a_down_arrow_16.png" />
+    <None Include="Resources\Browser_64.png" />
+    <None Include="Resources\Package_for_delivery_32.png" />
+    <None Include="Resources\Source_Page_32.png" />
+    <None Include="Resources\Network_32.png" />
+    <None Include="Resources\Puzzle_piece_plugin_32.png" />
+    <None Include="Resources\Bug_fixing_32.png" />
+    <None Include="Resources\Open_Archive_16.png" />
+    <None Include="Resources\File_16.png" />
+    <None Include="Resources\128-grayscale.png" />
+    <None Include="Resources\Earth_16.png" />
+    <None Include="Resources\Email_filled_closed_envelope_16.png" />
+    <None Include="Resources\Living_room_books_group_32.png" />
+    <None Include="Resources\Paint_board_and_brush_16.png" />
+    <None Include="Resources\Network_16.png" />
+    <None Include="Resources\Heart_black_shape_16.png" />
+    <None Include="Resources\Pulse_line_16.png" />
+    <None Include="Resources\Eraser_tool_for_school_16.png" />
+    <None Include="Resources\Code_16.png" />
+    <None Include="Resources\Finger_moving_activating_an_arrow_16.png" />
+    <None Include="Resources\Landscape_Image_16.png" />
+    <None Include="Resources\Chain_links_16.png" />
+    <None Include="Resources\Active_search_symbol_16.png" />
+    <None Include="Resources\Power_button_16.png" />
+    <None Include="Resources\Data_transference_on_internet_cloud_16.png" />
+    <None Include="Resources\restart_16.png" />
+    <None Include="Resources\Updating_arrows_16.png" />
+    <None Include="Resources\Update_arrows_16.png" />
+    <None Include="Resources\info_16.png" />
+    <None Include="Resources\System_Controller_16.png" />
+    <None Include="Resources\Error_Triangle_16.png" />
+    <None Include="Resources\External_link_symbol_16.png" />
+    <None Include="Resources\Plus_sign_16 %281%29.png" />
+    <None Include="Resources\Plus_sign_16 _white.png" />
+    <None Include="Resources\Settings_cogwheel_button_16.png" />
+    <None Include="Resources\Living_room_books_group_16.png" />
+    <None Include="Resources\Cute_rocket_launching_16.png" />
+    <None Include="Resources\Download_arrow_16.png" />
+    <None Include="Resources\Plus_sign_16.png" />
+    <None Include="Resources\Expand_button_16.png" />
+    <None Include="Resources\Repairing_Service_16.png" />
+    <None Include="Resources\Handyman_Tools_16.png" />
+    <None Include="Resources\Puzzle_piece_plugin_16.png" />
+    <None Include="Resources\Customize-01-16.png" />
+    <None Include="Resources\Data-Error-128.png" />
+    <None Include="Resources\logo-test.png" />
+    <None Include="Resources\firefox_darkbg.png" />
+    <None Include="Resources\splach-test1.png" />
+    <None Include="Resources\Modern _loader1.gif" />
+    <None Include="Resources\splach-test.png" />
+    <None Include="Resources\pointer1.png" />
+    <None Include="Resources\switchuser.png" />
+    <None Include="Resources\menu_right.png" />
+    <None Include="Resources\he_wall_post_icon.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\Globe-Download.png" />
+    <None Include="Resources\extensionslab.png" />
+    <None Include="Resources\utilities-desktop-extra.png" />
+    <None Include="Resources\spinner.gif" />
+    <None Include="Resources\product_design16.png" />
+    <None Include="Resources\tool.png" />
+    <None Include="Resources\Res_Icon_upgrade.png" />
+    <None Include="Resources\emblem-ubuntuone-updating.png" />
+    <None Include="Resources\ajax-loading.gif" />
+    <None Include="Resources\Modern _loader.gif" />
+    <None Include="Resources\wpspin_light.gif" />
+    <None Include="Resources\spin-24.gif" />
+    <None Include="Resources\press-wait.gif" />
+    <None Include="Resources\banner.png" />
+    <None Include="Resources\splash.png" />
+    <None Include="Resources\style.txt" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\blog_ava.png" />
+    <None Include="Resources\lin-loader1.gif" />
+    <None Include="Resources\knewstuff.png" />
+    <None Include="Resources\fav_tool.png" />
+    <None Include="Resources\Frozen Sound.mp3" />
+    <None Include="Resources\settingfav.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\Pattern_BlueWallFlower.jpg" />
+    <None Include="Resources\sb.gif" />
+    <None Include="Resources\Table.gif" />
+    <None Include="Resources\world.gif" />
+    <None Include="Resources\6utts0o.gif" />
+    <None Include="Resources\PTRN_WOOD_Little.png" />
+    <None Include="Resources\eraser.png" />
+    <None Include="Resources\lin-loader.gif" />
+    <None Include="Resources\athens_pc.png" />
+    <None Include="Resources\folder_open_16.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\globe.png" />
+    <None Include="Resources\internet.png" />
+    <None Include="Resources\workshop.png" />
+    <None Include="Resources\b_underline.png" />
+    <None Include="Resources\b_strike.png" />
+    <None Include="Resources\b_italic.png" />
+    <None Include="Resources\b_bold.png" />
+    <None Include="Resources\b_rchin2.png" />
+    <None Include="Resources\b_lchin.png" />
+    <None Include="Resources\b_rchin.png" />
+    <None Include="Resources\b_vchin.png" />
+    <None Include="Resources\b_line.png" />
+    <None Include="Resources\b_code.png" />
+    <None Include="Resources\alert.png" />
+    <None Include="Resources\plugin32.png" />
+    <None Include="Resources\plugin.png" />
+    <None Include="Resources\printer2.png" />
+    <None Include="Resources\printBut.png" />
+    <None Include="Resources\document-print.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\back-yello.png" />
+    <None Include="Resources\bestbg.jpg" />
+    <None Include="Resources\link1.png" />
+    <None Include="Resources\link-p.png" />
+    <None Include="Resources\bag_thunder.png" />
+    <None Include="Resources\arrow-orange.png" />
+    <None Include="Resources\arrow-white.png" />
+    <None Include="Resources\HDictionaryS.png" />
+    <None Include="Resources\bookcase.png" />
+    <None Include="Resources\agt_update_drivers.png" />
+    <None Include="Resources\rightel-footer-global.jpg" />
+    <None Include="Resources\transparent-bg-noise.png" />
+    <None Include="data\toup\31.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\toup\17.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\toup\07.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\toup\02.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\tag_green.png" />
+    <None Include="Resources\searchl.png" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\js_wrn1.png" />
+    <None Include="Resources\js_wrn.png" />
+    <None Include="Resources\rss.png" />
+    <None Include="Resources\bcg_bblog.png" />
+    <None Include="Resources\blog_fvicon.png" />
+    <None Include="Resources\Eice.png" />
+    <None Include="Resources\greenoxy.png" />
+    <None Include="Resources\pictures_frame.png" />
+    <None Include="Resources\world_link.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\27_edit_text16.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\he_wall_add_link.png" />
+    <None Include="Resources\he_wall_photo_icon.png" />
+    <None Include="Resources\blog_action_postblog.gif" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\contacte.png" />
+    <None Include="Resources\settings16.gif" />
+    <None Include="Resources\deletered.png" />
+    <None Include="Resources\table_select_all.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\LoadAgain.png" />
+    <None Include="Resources\firefox_grain1.png" />
+    <None Include="Resources\types-bg1.gif" />
+    <None Include="Resources\tcat1.gif" />
+    <None Include="Resources\Normal Select.png" />
+    <None Include="Resources\pointer.png" />
+    <None Include="Resources\Tangled-background.png" />
+    <None Include="Resources\arrow.png" />
+    <None Include="Resources\tag_red.png" />
+    <None Include="Resources\tools.png" />
+    <None Include="Resources\bookmark_new.png" />
+    <None Include="Resources\windows_menu.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\Aryan_Badge.png" />
+    <None Include="Resources\23.png" />
+    <None Include="Resources\page_white_code.png" />
+    <None Include="Resources\globe_blue.png" />
+    <None Include="Resources\favorites %281%29.png" />
+    <None Include="Resources\symbol_information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

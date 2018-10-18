@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+	<data>
+		<name>جعبه دانلود با منوی کشویی</name>
+		<short_text>ساخت جعبه دانلود پیشرفته با منو های کشویی</short_text>
+		<info></info>
+		<author>سیب گراف</author>
+		<load>prodownboxslider.txt</load>
+		<version>یکم</version>
+		<js>true</js>
+		<fav>Download_Arrow_ plugin.png</fav>
+		<app_version>11</app_version>
+		<download>http://aryan-pc.blog.ir/post/blogcode-app</download>
+		<page>sibgraph.ir</page>
+		<copyto>در پست ها و یا بخش body</copyto>
+	</data>
+
+	<options>
+
+		<lbl>
+	<text>طول جعبه</text>
+	<input>403</input>
+	<sug></sug>
+	<rtl>false</rtl>
+</lbl>
+
+		<lbl>
+	<text>عنوان لینک ها</text>
+	<input>لینک های دانلود</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>متن لینک</text>
+	<input>متن لینک اول</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>لینک اول</text>
+	<input>http://</input>
+	<sug></sug>
+	<rtl>false</rtl>
+</lbl>
+<lbl>
+	<text>متن لینک</text>
+	<input>متن لینک دوم</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>لینک دوم</text>
+	<input>http://</input>
+	<sug></sug>
+	<rtl>false</rtl>
+</lbl>
+<lbl>
+	<text>متن لینک</text>
+	<input>متن لینک سوم</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>لینک سوم</text>
+	<input>http://</input>
+	<sug></sug>
+	<rtl>false</rtl>
+</lbl>
+<lbl>
+	<text>عنوان توضیحات</text>
+	<input>توضیحات مطلب</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>توضیح</text>
+	<input>این بخش توضیحی برای این مطلب است</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>عنوان راهنما</text>
+	<input>راهنمای دانلود فایل ها</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>راهنما</text>
+	<input>این متن چگونگی  راهنمایی برای چگونگی دانلود است</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>فایل صوتی</text>
+	<type>combo</type>
+	<input>block</input>
+	<alts>فعال باشد|فعال نباشد</alts>
+	<sug>|style="display:none"</sug>
+	<rtl>true</rtl>
+</lbl>
+<lbl>
+	<text>آدرس پخش فایل صوتی</text>
+	<input>http://</input>
+	<sug></sug>
+	<rtl>false</rtl>
+</lbl>
+<lbl>
+	<text>جمله آخر</text>
+	<input>جهت نمایش هر باکس روی آن کلیک کنید</input>
+	<sug></sug>
+	<rtl>true</rtl>
+</lbl>
+
+
+		<gen_text>ساخت جعبه دانلود</gen_text>
+	</options>
+
+</base>

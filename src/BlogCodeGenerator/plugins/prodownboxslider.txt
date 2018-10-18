@@ -1,0 +1,32 @@
+﻿<style>
+#dlbox{direction: rtl;color: white;font-family: B Yekan;border-top: 2px solid rgb(34, 49, 63);text-align: right;}.dlbg li:hover {margin-right: 12px;transition: 0.3s;}.dln{width: 100%;background: #D64541;padding: 7px 0;font: 12px B yekan;cursor: pointer;padding-bottom: 5px;border-bottom: 1px solid white;list-style:none;}.dln span {margin-right: 10px;}.dlt span {margin-right: 10px;}.dli span {margin-right: 10px;}#player {width: 100%;background-color: rgb(34, 49, 63);margin-top: 2px;margin-bottom: 2px;}.dli{width: 100%;background: #D64541;padding: 7px 0;font: 12px B yekan;cursor: pointer;border-bottom: 1px solid white;}.obg{background: #22313F;padding: 7px 0;width: 100%;font-size: 12px;margin-bottom: 1px;}.inbg{background: #22313F;padding: 7px 0;width: 100%;font-size: 12px;}.inbg p {margin: 10px;}.dlt{width: 100%;background: #D64541;padding: 7px 0;font: 12px B yekan;border-bottom: 1px solid white;cursor: pointer;}.dlbg{background: #22313F;padding: 7px 0;width: 100%;font-size: 12px;}.dlbg a {text-decoration: none;color: white;margin-right: 7px;}.dlbg li {margin-bottom: 10px;margin-right: 5px;list-style: none;}.dlbg ul {margin: 0;padding: 0;}.help{background: rgb(34, 49, 63);padding: 7px 0;width: 100%;font-size: 12px;text-align: center;}.ten{background: rgb(34, 49, 63);padding: 7px 0;width: 413px;font-size: 11px;font-family: b yekan;/* border-radius: 5px 5px 0 0; */}.ten a {text-decoration: none;color: white;}
+</style>
+<script type="text/javascript" src="http://up.sibgraph.ir/view/274183/96_645_0.js"></script>
+
+<div id="dlbox" style="width:(*var1*)px">
+	<div class="dln">
+		<span>(*var2*)</span>
+	</div>
+	<div class="dlbg" style="display:none">
+		<ul>
+			<li><a href="(*var4*)">(*var3*)</a></li>
+			<li><a href="(*var6*)">(*var5*)</a></li>
+			<li><a href="(*var8*)">(*var7*)</a></li>
+		</ul>
+	</div>
+	<div class="dlt"><span>(*var9*)</span></div>
+	<div class="inbg" style="display:none">
+		<p>(*var10*)</p>
+	</div>
+	<div class="dlt"><span>(*var11*)</span></div>
+	<div class="inbg" style="display:none">
+		<p>(*var12*)</p>
+	</div>
+	
+	<div (*var13*) class="dli"><span>پخش آنلاین</span></div>
+	<div class="obg" style="display:none">
+		<audio id="player" src="(*var14*)" type="audio/mp3" controls="controls" preload="none"></audio>
+	</div>
+	
+	<div class="help">(*var15*)</div>
+</div>

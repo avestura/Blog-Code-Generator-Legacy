@@ -1,0 +1,56 @@
+﻿
+<div class="wrapper">
+       <div class="ribbon-wrapper-green"><div class="ribbon-green">(*var1*)</div></div>
+</div>​
+<style>
+.wrapper {
+  background: none repeat scroll 0 0 white;
+  border-radius: (*var2*)px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  height: (*var3*)px;
+  margin: 32px 32px;
+  position: relative;
+  width: (*var4*)px;
+  z-index: 90;
+}
+
+.ribbon-wrapper-green {
+  height: auto;
+  position: absolute;
+  right: -38px;
+  top: 1px;
+  width: auto;
+}
+
+.ribbon-green {
+  background-color: #bfdc7a;
+  background-image: -moz-linear-gradient(center top , #bfdc7a, #8ebf45);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  color: #6a6340;
+  font: bold 15px sans-serif;
+  left: -5px;
+  padding: 7px 0;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  top: 15px;
+  transform: rotate(40deg);
+  width: 154px;
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+.ribbon-green:after {
+  right: 0;
+}​
+</style>

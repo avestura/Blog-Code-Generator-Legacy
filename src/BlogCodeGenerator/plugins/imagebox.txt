@@ -1,0 +1,39 @@
+﻿<div tabindex="-1" style="z-index: 65555; opacity: 0.7; width: 100%; height: 100%; position: fixed;" aria-hidden="false" id="sbox-overlay"></div>
+<div class="shadow" style="z-index: 65557; left: 439px; top: 168px; position: fixed; width: (*var2*); height: (*var3*);" aria-hidden="false" role="dialog" id="sbox-window"><div id="sbox-content" style="opacity: 1;" class="sbox-content-iframe"><img style="width: 100%; height: 100%;" src="(*var1*)"></div><a onclick="document.getElementById('sbox-overlay').style.display = 'none';document.getElementById('sbox-window').style.display = 'none'" aria-controls="sbox-window" role="button" href="#" id="sbox-btn-close"></a></div>
+<style>
+#sbox-window[aria-hidden="true"], #sbox-overlay[aria-hidden="true"] {
+  display: none;
+}
+#sbox-overlay {
+  background-color: #000;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+#sbox-window.shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  opacity: 0.9;
+}
+#sbox-window[aria-hidden="true"], #sbox-overlay[aria-hidden="true"] {
+  display: none;
+}
+#sbox-content.sbox-content-iframe {
+  overflow: visible;
+}
+#sbox-content {
+  background-color: #fff;
+  clear: both;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+#sbox-btn-close {
+  background: url("http://bayanbox.ir/view/4353615058009510010/close.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+  border: medium none;
+  height: 30px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 30px;
+}
+</style>

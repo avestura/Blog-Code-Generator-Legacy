@@ -1,0 +1,61 @@
+﻿<style>
+.main_menu .cnt ul {
+  display: inline-block;
+  left: 0;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 35px;
+  width: 32px;
+}
+.main_menu .cnt li {
+  background: url("http://bayanbox.ir/view/182265879455323506/wooden-header.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-radius: 0 8px 38px 0;
+  cursor: default;
+  float: left;
+  height: 35px;
+  left: -164px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+  padding: 4px 0 4px 5px;
+  position: relative;
+  transition: left 0.375s ease 0s;
+  width: 200px;
+}
+.main_menu .cnt li.selected {
+  background-position: center bottom;
+}
+ .main_menu .cnt li:hover{
+	left:-15px;
+}
+.main_menu .cnt ul li > img {
+  margin-left: 7px;
+  margin-right: 4px;
+}
+.main_menu .cnt ul li > a {
+  color: #fff0e4;
+}
+.main_menu .cnt ul li > a:hover {
+  color: #ffedbe;
+}
+</style>
+<!-- شروع نوار منوی اصلی -->
+<div class="main_menu">
+ <div class="cnt">
+  <box:menu>
+   <ul>
+    <view:menu>
+     <li class="(*menu_item_selected*)">
+     <img height="32px" src="http://bayanbox.ir/blog/(*var1*)/templates/icons/(*menu_item_title*).png?view" style="float:right;" width="32px">
+      <a class="(*menu_item_selected*)" href="(*menu_item_link*)">(*menu_item_title*)</a>
+     </li>
+    </view:menu>
+    <li class="" style=" display:none;float: left; cursor: default; margin-right: 6px; padding: 4px 0px 4px 5px; position: relative; width: 200px; left: -67px; background-color: #00A3FF; height: 250px; border-radius: 0 16px 16px 0;">
+     
+    </li>
+   </ul>
+  </box:menu>
+ </div>
+</div>
+<!-- پایان نوار منوی اصلی -->

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>افکت متن</name>
+        <short_text>انعکاس متن</short_text>
+        <info></info>
+        <author>نسن</author>
+        <load>efectmatn.txt</load>
+        <version>1</version>
+        <js>false</js>
+		<app_version>9</app_version>
+    </data>
+    
+    <options>
+
+<lbl>
+        <text>عنوان متن (رنگ قرمز)</text>
+        <input>در این قسمت چیزی بنویسید</input>
+        <sug></sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>عنوان متن (رنگ آبی)</text>
+        <input>در این قسمت چیزی بنویسید</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+
+
+		<gen_text>ساخت افکت</gen_text>
+    </options>
+
+</base>
+	

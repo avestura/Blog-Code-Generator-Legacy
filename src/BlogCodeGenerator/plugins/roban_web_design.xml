@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>روبان ساز وب</name>
+        <short_text>ساخت روبان برای گوشه دایو ها ویژه طراحی وب</short_text>
+        <info></info>
+        <author>آرین نرم افزار</author>
+        <load>roban_web_design.txt</load>
+        <version>اول</version>
+        <js>false</js>
+<fav>roban.png</fav>
+		<app_version>9</app_version>
+    </data>
+    
+    <options>
+
+<lbl>
+        <text>متن روبان</text>
+        <input>متن روی روبان</input>
+        <sug>دانلود|جدید|تازه ها</sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>گردی گوشه جعبه</text>
+        <input>2</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>ارتفاع جعبه</text>
+        <input>400</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>طول جعبه</text>
+        <input>500</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+
+
+
+		<gen_text>ساخت روبان</gen_text>
+    </options>
+
+</base>
+	

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+	<data>
+		<name>(*pname*)</name>
+		<short_text>(*pshort*)</short_text>
+		<info>(*plong*)</info>
+		<author>(*pdev*)</author>
+		<load>(*pload*)</load>
+		<version>(*pver*)</version>
+		<js>(*pjs*)</js>
+		<app_version>10</app_version>
+		<download>http://aryan-pc.blog.ir/post/blogcode-app</download>
+		<page>(*plugin_page*)</page>
+	</data>
+	<options>
+		(*content*)
+
+		<gen_text>(*pgen*)</gen_text>
+	</options>
+
+</base>

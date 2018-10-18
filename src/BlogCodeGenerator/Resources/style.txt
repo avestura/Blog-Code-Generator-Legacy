@@ -1,0 +1,36 @@
+<style>
+@charset "utf-8";
+/* item_wrn & item_err --------------------------------------------------------------------------------------------- */
+.item_wrn, .item_err, .item_success {
+	border: 1px solid #e6db55;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 5px;
+	line-height: 18px;
+	margin-bottom: 10px;
+	background: #ffffe0;
+	color: #333;
+}
+.item a, .item_wrn a, .item_err a,.item_success a{
+	text-decoration: none;
+	padding: 1px 1px 2px;
+}
+.item_err .icon, .item_wrn .icon, .item_success .icon{
+	background: url(http://bayanbox.ir/view/8691657315812240517/messages.png) no-repeat right 0;
+	width: 18px;
+	height: 18px;
+	float: right;
+	margin: 0 2px 0 6px;
+}
+.item_wrn a{ color: #C30; }
+.item_wrn a:hover{ background-color: #C30;	color: #FFF;}
+.item_wrn .icon { background-position: right -18px; }	
+.item_err{ border-color: #fe8f6b; background: #ffe2d9;}
+.item_err a{ color: #ce3e0e; }
+.item_err a:hover{background-color: #ce3e0e;color: #FFF;}
+.item_success{ border-color: #47AF41; background: #D2FFCF;}
+.item_success .icon { background-position: right -36px; }	
+.item_success a{ color: #088F1B; }
+.item_success a:hover{background-color: #088F1B;color: #FFF;}
+</style>

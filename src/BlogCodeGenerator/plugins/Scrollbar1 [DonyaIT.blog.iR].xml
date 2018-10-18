@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>تغییر نوار اسکرول صفحه</name>
+        <short_text>ابزار تغییر نوار اسکرول صفحه</short_text>
+        <info>ابزار تغییر نوار اسکرول صفحه        نسخه: 1                سازنده: محمد اسکندری خسروشاهی        وبلاگ: DonyaIT.blog.iR    |     دنیا آی‌تی.بلاگــ                 ◄ کد ساخته شده را در قسمت body قرار دهید.</info>
+        <author>Mohammad Eskandari Khosrowshahi</author>
+        <load>Scrollbar1 [DonyaIT.blog.iR].txt</load>
+        <version>1</version>
+        <js>true</js>
+		<app_version>9</app_version>
+<fav>Scrollbar1 [DonyaIT.blog.iR].png </fav>
+    </data>
+    
+    <options>
+
+<lbl>
+        <text>مکان نوار اسکرول  (right  یا  left)</text>
+        <type>combo</type>
+        <input>right</input>
+        <alts>راست|چپ</alts>
+        <sug>right|left</sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>رنگ نوار اسکرول (رنگ را به صورت کد بدون # بنویسید) (برای انخاب رنگ میتوانید به  http://html-color-codes.info  بروید)</text>
+        <input>EDFF47</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>اندازه پهنای نوار اسکرول برحسب پیکسل (مثال: 10)</text>
+        <input>10</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>رنگ پشت زمینه (رنگ را به صورت کد بدون # بنویسید)  (برای انخاب رنگ میتوانید به  http://html-color-codes.info  بروید)</text>
+        <input>1F17FF</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>مخفی شدن اتوماتیک ( False یا True )</text>
+        <type>combo</type>
+        <input>true</input>
+        <alts>روشن|خاموش</alts>
+        <sug>true|false</sug>
+        <rtl>true</rtl>
+</lbl>
+
+
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

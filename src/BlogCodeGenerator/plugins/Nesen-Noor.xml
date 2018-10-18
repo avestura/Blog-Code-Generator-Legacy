@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+    <data>
+        <name>افکت تصویر</name>
+        <short_text>افکت بزگنمایی تصویر</short_text>
+        <info></info>
+        <author>نسن نور</author>
+        <load>Nesen-Noor.txt</load>
+        <version>1</version>
+        <js>false</js>
+<app_version>9</app_version>
+    </data>
+    
+    <options>
+        <lbl>
+                <text>آدرس تصویر</text>
+                <input>http://nesennoor.persiangig.com/image/DSC00246.JPG</input>
+                <sug></sug>
+                <rtl>false</rtl>
+        </lbl>
+        <lbl>
+                <text>عرض عادی تصویر</text>
+                <input>640</input>
+                <sug></sug>
+                <rtl>false</rtl>
+        </lbl>
+        <lbl>
+                <text>طول عادی تصویر</text>
+                <input>480</input>
+                <sug></sug>
+                <rtl>false</rtl>
+        </lbl>
+        <lbl>
+                <text>عرض بزرگنمایی تصویر</text>
+                <input>800</input>
+                <sug></sug>
+                <rtl>false</rtl>
+        </lbl>
+        <lbl>
+                <text>طول بزرگنمایی تصویر</text>
+                <input>600</input>
+                <sug></sug>
+                <rtl>false</rtl>
+        </lbl>
+
+						
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

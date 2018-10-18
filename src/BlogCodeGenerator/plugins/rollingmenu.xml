@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+    <data>
+        <name>منو لغزنده</name>
+        <short_text>ساخت منو لغزشی</short_text>
+        <info>ساخت یک منو با استفاده از CSS برگرفته از سایت yas98.ir</info>
+        <author>مهرداد محمدی</author>
+        <load>rollingmenu.txt</load>
+        <version>اول</version>
+        <js>false</js>
+	<fav>menu.png</fav>
+<app_version>9</app_version>
+    </data>
+    
+    <options>
+
+		<lbl>
+			<text>متن سایت</text>
+			<input>سایت من</input>
+			<rtl>true</rtl>
+		</lbl>
+		<lbl>
+			<text>آدرس سایت</text>
+			<input>http://</input>
+			<rtl>false</rtl>
+		</lbl>
+		<lbl>
+			<text>متن تبادل لینک</text>
+			<input>تبادل لینک با من</input>
+			<rtl>true</rtl>
+		</lbl>
+		<lbl>
+			<text>لینک به تبادل لینک</text>
+			<input>http://</input>
+			<rtl>false</rtl>
+		</lbl>
+		<lbl>
+			<text>متن پروفایل</text>
+			<input>پروفایل مدیر</input>
+			<rtl>true</rtl>
+		</lbl>
+		<lbl>
+			<text>لینک پروفایل</text>
+			<input>http://</input>
+			<rtl>false</rtl>
+		</lbl>
+		<lbl>
+			<text>ارتباط با ما</text>
+			<input>ارتباط با من</input>
+			<rtl>true</rtl>
+		</lbl>
+		<lbl>
+			<text>لینک ارتباط</text>
+			<input>http://</input>
+			<rtl>false</rtl>
+		</lbl>
+		<gen_text>بسازش</gen_text>
+    </options>
+
+</base>
+	

@@ -1,0 +1,76 @@
+!DOCTYPE application
+
+<application>
+
+	<app:head>
+
+		<title>Blog Code Generator</title>
+		<developer>Aryan Ebr.</developer>
+		<site>Aryan-pc.ir</site>
+		<blog>aryan-pc.blog.ir</blog>
+		<mail>aryanebrahimpour@gmail.com</mail>
+		<meta>Protected Aryan Software App Config</meta>
+
+	</app:head>
+
+	<app:import>
+
+		<imp:user_type>
+			<type id="1">Standard</type>		
+			<type id="2">Developer</type>
+			<type id="3">Administrator</type>
+			<type id="4">TemplateMaker_Allowed</type>
+		</imp:user_type>
+
+		<imp:code_imp language="VisualBasic.NET" runat="local">
+		
+			Imports System.Net
+			Imports System.Threading
+			Imports System.IO
+			Imports AryanSoftware.VIPUsers
+			Imports AryanSoftware.Products.TemplateMaker
+
+		</imp:code_imp>
+
+		<imp:load_funection name="fun_Do" src="http://funections.aryan-pc.ir/software/api/DFH64JFGFKGJFJ96743JDKJN/users/aryan7/funs.vb">
+
+		<imp:code_imp language="VisualBasic.NET">
+		
+		Using [dotnet.dll , microsoft_d_fw.dll , "c:/%win%/system32/@locator ] {
+		
+			IF fun_Do.Document.RequestingIP(Client.Local) = "192.168.0.1" andalso fun_Do.Document.RequestingIP(Web.Server) like "109.109.*.*" Then
+						
+				fun_Do.ShowPage()
+				Process.Start("http://api.aryan-pc.ir/" & adminUser & "/api/" & PageUrl)
+
+			Else
+
+				fun_Do.DeletePage()
+				Document.Show("/404.html")
+				fun_Do.innerHTML="<html><head><title>Page Not Found - 404<title></head></html>"
+
+			End IF
+		}
+
+		</imp:code_imp>
+
+	</app:import>
+
+	<app:config>
+
+		<config:start_in>localhost</config:start_in>
+		<config:server>getvalue.aryan-pc.ir</config:server>
+		<config:user_type_id>1</config:user_type_id>
+		<config:redebug>Allowed</config:redebug>
+		<config:templatemaker>
+			<code>@this.Thread(CheckUser())</code>
+		</config:templatemaker>
+	</app:config>
+
+	<app:protector>
+		<name>APPLICATION SOURCE PROTECTOR</name>
+		<version>1.2.4531</version>
+		<enabled>true</enabled>
+	</app:protector>
+
+</application>

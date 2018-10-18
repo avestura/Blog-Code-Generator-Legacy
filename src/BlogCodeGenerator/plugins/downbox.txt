@@ -1,0 +1,145 @@
+﻿<style>
+A { text-decoration: none; }
+.p
+{
+
+background:tomato;
+display: block;
+width: 400px;
+height: 40px;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-ms-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+font:20px b yekan;
+direction:rtl;
+padding-top:10px;
+padding-right:10px;
+margin-top:3px;
+
+}
+.p:hover
+{
+background: #5d90ff;
+width: 420px;
+height: 40px;
+-webkit-animation:rotatey 400ms ease-out;
+-moz-animation:rotatey 400ms ease-out;
+}
+.p1
+{
+background:tomato;
+display: block;
+width: 400px;
+height: 40px;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-ms-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+font:20px b yekan;
+direction:rtl;
+padding-top:10px;
+padding-right:10px;
+margin-top:3px;
+
+}
+.p1:hover
+{
+background: #5dff74;
+width: 420px;
+height: 40px;
+-webkit-animation:rotatey 400ms ease-out;
+-moz-animation:rotatey 400ms ease-out;
+}
+.p2
+{
+background:tomato;
+display: block;
+width: 400px;
+height: 40px;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-ms-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+font:20px b yekan;
+direction:rtl;
+padding-top:10px;
+padding-right:10px;
+margin-top:3px;
+
+}
+.p2:hover
+{
+background: #ff5dad;
+width: 420px;
+height: 40px;
+-webkit-animation:rotatey 400ms ease-out;
+-moz-animation:rotatey 400ms ease-out;
+}
+.p3
+{
+background:#f37b51;
+display: block;
+width: 195px;
+height: 40px;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-ms-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+font:17px b yekan;
+direction:rtl;
+padding-top:10px;
+padding-right:10px;
+margin-top:3px;
+position:absolute;
+margin-left:206px
+
+}
+.p3:hover
+{
+background: #d35dff;
+width: 195px;
+height: 40px;
+-webkit-animation:rotatey 400ms ease-out;
+-moz-animation:rotatey 400ms ease-out;
+position:absolute;
+
+}
+.p4
+{
+background:#f37b51;
+display: block;
+width: 195px;
+height: 40px;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-ms-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+font:13px b yekan;
+direction:rtl;
+padding-top:10px;
+padding-right:10px;
+margin-top:3px;
+position:absolute;
+
+}
+.p4:hover
+{
+background: #ffcf5d;
+width: 195px;
+height: 40px;
+-webkit-animation:rotatey 400ms ease-out;
+-moz-animation:rotatey 400ms ease-out;
+position:absolute;
+
+}
+</style>
+<div class="p"><a href="(*var2*)">(*var1*)</a></div>
+<div class="p1"><a href="(*var4*)">(*var3*)</a></div>
+<div class="p2"><a href="(*var6*)">(*var5*)</a></div>
+<div class="p4"><a href="(*var8*)">(*var7*)</a></div> 

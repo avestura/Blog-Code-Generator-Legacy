@@ -1,0 +1,7 @@
+﻿<div id="aryan_log">(*var2*)</div>
+<script>
+	/* Check For user Or Guest by Aryan Software aryan-pc.blog.ir */
+	if (constant.loggedIn == 1) {
+		document.getElementById('aryan_log').innerHTML = '(*var1*)';
+	}
+</script>

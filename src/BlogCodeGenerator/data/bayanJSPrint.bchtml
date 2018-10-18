@@ -1,0 +1,2 @@
+<style>#bloggenprint{transition-duration:0.5s;opacity:1;}#bloggenprint:hover{opacity:0.7;}</style>
+<a id="bloggenprint" href="javascript:window.print()"><img src="(*img_url*)"/></a>

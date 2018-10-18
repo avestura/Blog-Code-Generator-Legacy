@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+    <data>
+        <name>ساخت متن رنگی</name>
+        <short_text>ساخت متونی که در ثانیه تغییر رنگ می دهند</short_text>
+        <info>با گذاشتن این کد در وبسایت شما متن مورد نظر در هر ثانیه تغییر رنگ میکند</info>
+        <author>محمد مهرابی www.dnmshop.ir</author>
+        <load>text-colors.txt</load>
+        <version>1.0</version>
+        <js>true</js>
+<fav>text-colors.png</fav>
+		<app_version>9</app_version>
+    </data>
+    
+    <options>
+
+        <lbl>
+                <text>متن مورد نظر</text>
+                <input>متن مورد نظر شما</input>
+                <sug></sug>
+                <rtl>true</rtl>
+        </lbl>
+
+		
+		
+		
+		
+		
+		
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

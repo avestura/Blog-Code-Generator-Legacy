@@ -1,0 +1,48 @@
+﻿<style>
+#SenBackLoginBox{
+background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0px;
+left: 0px;
+z-index: 10000;
+font: 11px tahoma;
+display:none;
+}
+#SenCodeLoginBox{
+width: 40%;
+top: 27%;
+left: 28%;
+background: none repeat scroll 0% 0% #E5E5E5;
+position: absolute;
+margin: 0px auto;
+padding: 10px;
+border: 6px solid #28A9CC;
+text-align: justify;
+direction: rtl;
+border-radius: 4px;
+box-shadow: 0px 0px 15px #4B4849;
+z-index: 100;
+}
+#SenCodeLoginBox{
+text-align: justify;
+direction: rtl;
+}
+</style>
+<script>
+function closebox(){
+document.getElementById('SenBackLoginBox').style.display='none';
+}
+</script>
+<script>
+function openbox(){
+document.getElementById('SenBackLoginBox').style.display='block';
+}
+</script>
+<div style="width:(*var2*)px;height:(*var3*)px" onmouseout="closebox();" onmouseover="openbox()"><img src="(*var1*)"></div>
+<div id="SenBackLoginBox">
+<div id="SenCodeLoginBox">
+<img style="width:(*var4*);height:(*var5*)" src="(*var6*)">
+</div>
+</div>

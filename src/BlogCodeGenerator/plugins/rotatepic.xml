@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>افکت چرخش تصویر</name>
+        <short_text>ابزاری برای چرخش تصاویر صفحه</short_text>
+        <info>این ابزار باعث چرخش تصویر انتخابی شما با شناور شدن ماوس روی آن می شود</info>
+        <author>آرین نرم افزار</author>
+        <load>rotatepic.txt</load>
+        <version>اول</version>
+        <js>false</js>
+<fav>rotate.png</fav>
+		<app_version>9</app_version>
+    </data>
+    
+    <options>
+<lbl>
+        <text>آدرس تصویر</text>
+        <input>http://</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+
+<lbl>
+        <text>مدت زمان افکت (بر حسب ثانیه)</text>
+        <input>0.6</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+
+<lbl>
+        <text>میزان چرخش (درجه)</text>
+        <input>360</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+
+
+
+
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

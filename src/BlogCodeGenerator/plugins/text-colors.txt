@@ -1,0 +1,10 @@
+﻿<!-----www.dnmshop.ir-----><p id="a">
+(*var1*)</p>
+ <script language="JavaScript" type="text/javascript">
+function change()
+{
+re="rgb("+Math.round(Math.random()*256)+","+Math.round(Math.random()*256)+","+Math.round(Math.random()*256)+")"
+a.style.color=re;
+}
+setInterval(change,1000);
+</script>

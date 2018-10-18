@@ -1,0 +1,30 @@
+﻿<style>
+  [reflect]{
+    position: relative;
+    height: 2.7em;
+  }
+  [reflect]:after{
+    position: absolute;
+    bottom: 0;
+    transform: scale(1,-1) translateX(-100%);
+    -webkit-transform: scale(1,-1) translateX(-100%);
+    -ms-transform: scale(1,-1) translateX(-100%);
+    opacity: .5;
+    content: attr(reflect);
+  }
+  [reflect][dir="rtl"]:after{
+    transform: scale(1,-1) translateX(100%);
+	-webkit-transform: scale(1,-1) translateX(100%);
+    -ms-transform: scale(1,-1) translateX(100%);
+  }
+  [reflect]:before{
+    content: attr(reflect);
+  }
+</style>
+
+
+
+
+<div style="color:orangered;font:20px tahoma;text-align:center;text-shadow:0 0 10px" dir="rtl" reflect="(*var1*)"></div>
+<br><br>
+<div style="color:#159;font:20px tahoma;text-align:center;text-shadow:0 0 30px;" dir="ltr" reflect="(*var2*)"></div>

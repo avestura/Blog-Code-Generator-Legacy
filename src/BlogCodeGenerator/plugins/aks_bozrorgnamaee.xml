@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>بزرگنمایی حرفه ای عکس</name>
+        <short_text>بزرگنمایی عکس در وب</short_text>
+        <info>با استفاده از این ابزار می توانید با رفتن موس بر روی عکس تعریف شده در این ابزار عکس را به صورت حرفه ای بزرگ نمایید.</info>
+        <author>نسن</author>
+        <load>aks_bozrorgnamaee.txt</load>
+        <version>1</version>
+        <js>false</js>
+		<app_version>9</app_version>
+    </data>
+    
+    <options>
+
+<lbl>
+        <text>تصویر عادی</text>
+        <input>http://up.nesennoor.ir/up/nesennoor/Pictures/93/nordan.JPG</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>عرض عادی</text>
+        <input>350</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>طول عادی</text>
+        <input>300</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>عرض بزرگنمایی</text>
+        <input>480</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>طول بزرگنمایی</text>
+        <input>450</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>تصویر بزرگ شده</text>
+        <input>http://up.nesennoor.ir/up/nesennoor/Pictures/93/nordan.JPG</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+
+
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

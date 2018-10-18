@@ -1,0 +1,21 @@
+<!-- Welcome Message by aryan-pc.blog.ir -->
+<style>.aryanium-notify > div {background: none repeat scroll 0 0 #FFFFFF;border: 0 solid #FF0000;bottom: 10px;box-shadow: 0 0 15px #000000;float: right;padding: 30px 15px 15px;position: absolute;right: 10px;width: 260px !important;}.bottom {bottom: 0;left: 0;position: fixed;right: 0;}.aryanium-notify {color: #FFFFFF;display: block;height: 100%;left: 0;line-height: 1.4em;padding: 0;position: fixed;top: 0;z-index: 1000000;}.aryanium-notify-accept {background: url("http://bayanbox.ir/view/6054830277370988024/closebox.png") no-repeat scroll left top rgba(0, 0, 0, 0);float: left;font-size: 0;height: 30px;left: -33px;margin-right: -30px;overflow: hidden;padding: 0;position: relative;text-indent: -50em;top: -43px;width: 30px;}.aryanium-welcome {color: #EC068D;font-size: 0.9em;padding: 0;transition-duration:1s;}.aryanium-welcome a {color: #BBBBBB;text-decoration: none;color: #ED2025;}.aryanium-welcome a:hover {color: #FFA900;}</style>
+<script>function closeBox(toClose) {document.getElementById(toClose).style.display = "none";}</script>
+<div id="aryanium-notify" class="aryanium-notify bottom" style="background-color: rgba(30, 30, 30, 0.2);">
+    <div style="width:95%; margin: 0 auto;">
+    <span style="cursor: pointer;" onclick="closeBox('aryanium-notify'); return false;" class="aryanium-notify-accept">Continue</span>
+        <h2 style="margin: -5px 0px 0px ! important; font-weight: bold; color: black; float: right; direction: rtl;">(*text_head*)</h2><br>
+           <p style="color: rgb(112, 112, 112); float: right; direction: rtl;">
+		   (*text_des*)
+		   <br><br>
+        <span class="aryanium-welcome"><a href="(*prof_href*)">
+		(*prof_text*)
+		</a></span>
+        <span class="aryanium-welcome"> - </span>
+        <span class="aryanium-welcome"><a href="(*link_href*)">
+		(*link_text*)
+		</a></span>
+        </p>
+    </div>
+</div>
+<!-- end of Welcome Message by aryan-pc.blog.ir -->

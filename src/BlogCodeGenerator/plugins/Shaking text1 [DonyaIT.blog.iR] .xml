@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base>
+
+   <data>
+        <name>افکت متن لرزنده</name>
+        <short_text>افکت متن لرزنده با رنگ های مختلف</short_text>
+        <info>افکت متن لرزنده با رنگ ها و اندازه های مختلف                 سازنده: محمد اسکندری خسروشاهی        نسخه: 1        وبلاگ: DonyaIT.blog.iR  |  دنیا آی‌تی.بلاگـــ</info>
+        <author>Mohammad Eskandari Khosrowshahi</author>
+        <load>Shaking text1 [DonyaIT.blog.iR] .txt</load>
+        <version>1</version>
+        <js>true</js>
+		<app_version>9</app_version>
+<fav>Shaking text1[DonyaIT.blog.iR] .png </fav>
+    </data>
+    
+    <options>
+
+<lbl>
+        <text>متن مورد نظر</text>
+        <input>DonyaIT.blog.iR</input>
+        <sug></sug>
+        <rtl>true</rtl>
+</lbl>
+<lbl>
+        <text>اندازه مورد نظر .... (یک عدد وارد کنید)</text>
+        <input>1</input>
+        <sug></sug>
+        <rtl>false</rtl>
+</lbl>
+<lbl>
+        <text>رنگ مورد نظر ..... (کد یا کلمه انگلیسی رنگ مورد نظر را وارد کنید)☻(با تایپ‌کردن حرف اول از رنگ مورد نظر لیستی از رنگ ها را خواهید دید)☻(برخی از رنگ های خاص به رنگ سیاه نشان داده‌می‌شوند!)</text>
+        <input>blue</input>
+        <sug>Indian Red|Red|Dark Red|Pink|Hot Pink|Medium Violet Red|Light Salmon|Orange|Orange Red|Tomato|Moccasin|Yellow|Gold|Green Yellow|Spring Green|Green|Olive|Aqua|Sky Blue|Blue|Navy|Violet|Fuchsia|Dark Violet|Purple|Sandy Brown|Brown|Silver|Gray|Light Slate Gray|Dark Slate Gray|Black|White</sug>
+        <rtl>false</rtl>
+</lbl>
+
+
+		<gen_text>کد بساز!</gen_text>
+    </options>
+
+</base>
+	

@@ -1,0 +1,49 @@
+<style>
+.imm img{
+	margin-top:10px;
+	margin-left:10px;
+	transition: width 1s , height 1s ;
+	-moz-transition: width 1s, height 1s;
+	-webkit-transition: width 1s, height 1s;
+	-o-transition: width 1s, height 1s;
+	width: (*var2*)px;
+	height: (*var3*)px;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 5px; 
+	animation:myfirst 0.5s infinite;
+	-moz-animation:myfirst 0.5s infinite;
+	-webkit-animation:myfirst 0.5s infinite;
+}
+.imm img:hover{
+	box-shadow: 0px 0px 10px black;
+	width: (*var4*)px ;
+	height: (*var5*)px ;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 5px; 
+}
+
+@keyframes myfirst
+{
+0%   {box-shadow: 0px 0px 2px;-o-box-shadow: 0px 0px 2px;-ms-box-shadow: 0px 0px 2px;-khtml-box-shadow: 0px 0px 2px;}
+50%  {box-shadow: 0px 0px 15px;-o-box-shadow: 0px 0px 15px;-ms-box-shadow: 0px 0px 15px;-khtml-box-shadow: 0px 0px 15px;}
+100% {box-shadow: 0px 0px 2px;-o-box-shadow: 0px 0px 2px;-ms-box-shadow: 0px 0px 2px;-khtml-box-shadow: 0px 0px 2px;}
+}
+
+@-moz-keyframes myfirst
+{
+0%   {box-shadow: 0px 0px 2px;-moz-box-shadow: 0px 0px 2px;}
+50%  {box-shadow: 0px 0px 15px;-moz-box-shadow: 0px 0px 15px;}
+100% {box-shadow: 0px 0px 2px;-moz-box-shadow: 0px 0px 2px;}
+}
+
+@-webkit-keyframes myfirst
+{
+0%   {box-shadow: 0px 0px 2px;-webkit-box-shadow: 0px 0px 2px;}
+50%  {box-shadow: 0px 0px 15px;-webkit-box-shadow: 0px 0px 15px;}
+100% {box-shadow: 0px 0px 2px;-webkit-box-shadow: 0px 0px 2px;}
+}
+</style>
+
+<center class="imm">
+	<img src="(*var1*)" alt="äÓä äæÑ" />
+</center>
